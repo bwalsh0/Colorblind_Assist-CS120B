@@ -33,27 +33,6 @@ TCS34725: https://github.com/adafruit/Adafruit_TCS34725
 #define TCSLEDOn()	TCS_LED_PORT |= (1<<TCS_LED_POS)
 #define TCSLEDOff() TCS_LED_PORT &=~ (1<<TCS_LED_POS)
 
-/*
-/sound frequency (THz) x40 = light frequency (nm)
-/
-/Red is more dominant in the light spectrum due to its long wavelength.
-/avg diff (THz): 30 THz per half note on scale
-*/
-#define F4  349 //near-black (51,0,0) to (0,0,0) circles up to F5 ////3342336
-#define FS4 370 // (102,0,0)
-#define G4  392 // (153,0,0)
-#define GS4 415 // (204,0,0)
-#define A4  440 //bright red (roughly 255,0,0) ////16711680
-#define AS4 466
-#define B4  494 
-#define C5  523 //bright green (roughly 0,255,0) ////65280
-#define CS5 554
-#define D5  587
-#define DS5 622 //full blue (roughly 0,0,255)
-#define E5  659
-#define F5  698 //near-black (0,0,0) to (0,0,51) circles down to F4
-
-
 void InitTCS3200();
 
 void TCSSelectRed();
