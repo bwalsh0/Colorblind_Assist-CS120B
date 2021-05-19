@@ -1,4 +1,4 @@
-# Colorblind_Assist-CS120B
+# Handheld Colorblind Assistant
 
 ### Description
 The Colorblind Assistant is intended to help people with difficulty in recognizing colors.
